@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio View Controller-->
+        <scene sceneID="Qq0-tT-VcA">
+            <objects>
+                <viewController storyboardIdentifier="AudioViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kf1-NY-YvI" customClass="AudioViewController" customModule="ConversationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Z9-68-0Ro"/>
+                        <viewControllerLayoutGuide type="bottom" id="IEZ-Zo-5ex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0bv-3c-h6r" customClass="AudioView" customModule="ConversationDemo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eBr-JP-maV">
+                                <rect key="frame" x="0.0" y="20" width="736" height="394"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-XL-bsC">
+                                        <rect key="frame" x="0.0" y="0.0" width="736" height="114"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-eu-F8Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="736" height="76"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-Em-tNp">
+                                                <rect key="frame" x="0.0" y="76" width="736" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="ZwY-Pn-eVB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QJ9-Em-tNp" firstAttribute="height" secondItem="lfN-eu-F8Q" secondAttribute="height" multiplier="0.5" id="0Wi-40-mu7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-oF-Rcg">
+                                        <rect key="frame" x="0.0" y="114" width="736" height="280"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="86o-HN-ySh">
+                                                <rect key="frame" x="323.66666666666669" y="45" width="89" height="190"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeH-Wb-67Z">
+                                                        <rect key="frame" x="27" y="0.0" width="35" height="30"/>
+                                                        <state key="normal" title="Mute"/>
+                                                        <connections>
+                                                            <action selector="mute:" destination="Kf1-NY-YvI" eventType="touchUpInside" id="nWJ-C2-cmR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qx-Pm-LWx">
+                                                        <rect key="frame" x="17" y="40" width="55" height="30"/>
+                                                        <state key="normal" title="Earmuff"/>
+                                                        <connections>
+                                                            <action selector="earmuff:" destination="Kf1-NY-YvI" eventType="touchUpInside" id="ucV-pD-vXf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-dJ-9h7">
+                                                        <rect key="frame" x="28" y="80" width="33" height="30"/>
+                                                        <state key="normal" title="Hold"/>
+                                                        <connections>
+                                                            <action selector="hold:" destination="Kf1-NY-YvI" eventType="touchUpInside" id="LdH-ky-Sfr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIV-93-dF2">
+                                                        <rect key="frame" x="0.0" y="120" width="89" height="30"/>
+                                                        <state key="normal" title="Loudspeaker"/>
+                                                        <connections>
+                                                            <action selector="loudspeaker:" destination="Kf1-NY-YvI" eventType="touchUpInside" id="qJ3-BX-QlO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMI-y1-i0n">
+                                                        <rect key="frame" x="17" y="160" width="55" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Disable">
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="disable" destination="Kf1-NY-YvI" eventType="touchUpInside" id="xGf-8T-pT9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="86o-HN-ySh" firstAttribute="centerX" secondItem="1ks-oF-Rcg" secondAttribute="centerX" id="0xr-8a-Ekb"/>
+                                            <constraint firstItem="86o-HN-ySh" firstAttribute="centerY" secondItem="1ks-oF-Rcg" secondAttribute="centerY" id="9cK-SJ-zY1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="R6E-XL-bsC" secondAttribute="trailing" id="Vfw-jn-XcW"/>
+                                    <constraint firstItem="R6E-XL-bsC" firstAttribute="top" secondItem="eBr-JP-maV" secondAttribute="top" id="oo9-lx-JB8"/>
+                                    <constraint firstItem="R6E-XL-bsC" firstAttribute="leading" secondItem="eBr-JP-maV" secondAttribute="leading" id="zXp-hV-gKE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eBr-JP-maV" secondAttribute="trailing" id="YSa-h1-a2q"/>
+                            <constraint firstItem="eBr-JP-maV" firstAttribute="top" secondItem="5Z9-68-0Ro" secondAttribute="bottom" id="aaL-c9-i2L"/>
+                            <constraint firstItem="eBr-JP-maV" firstAttribute="leading" secondItem="0bv-3c-h6r" secondAttribute="leading" id="ddz-F7-7I2"/>
+                            <constraint firstItem="IEZ-Zo-5ex" firstAttribute="top" secondItem="eBr-JP-maV" secondAttribute="bottom" id="mb2-Ke-uRg"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="disable" destination="oMI-y1-i0n" id="Ld9-um-tdM"/>
+                            <outlet property="earmuff" destination="3Qx-Pm-LWx" id="ef4-on-Mzf"/>
+                            <outlet property="hold" destination="nfO-dJ-9h7" id="dyX-ML-eH3"/>
+                            <outlet property="loudspeaker" destination="vIV-93-dF2" id="7E7-eB-QXp"/>
+                            <outlet property="mute" destination="qeH-Wb-67Z" id="02P-0s-7fK"/>
+                            <outlet property="state" destination="QJ9-Em-tNp" id="KHO-Or-fhA"/>
+                            <outlet property="title" destination="lfN-eu-F8Q" id="Mjk-BL-OJB"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoi-Xd-qhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.19999999999999" y="-86.806596701649184"/>
+        </scene>
+    </scenes>
+</document>

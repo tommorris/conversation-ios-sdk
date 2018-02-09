@@ -1,0 +1,12 @@
+{
+    "type": "member:media",
+    "from": "MEM-d231e4ba-09f3-4c65-9f69-39781cd19ed2",
+    "body": {
+        "audio": true
+    },
+    "id": 5,
+    "timestamp": "2017-11-08T17:16:08.918Z",
+    "state": null,
+    "cid": "CON-875c6a15-f869-4123-8189-8fec9a808e61",
+    "href": "http://localhost/v1/conversations/CON-875c6a15-f869-4123-8189-8fec9a808e61/events/5"
+}

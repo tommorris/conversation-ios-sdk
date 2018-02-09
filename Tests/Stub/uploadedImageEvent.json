@@ -1,0 +1,32 @@
+{
+	"id": 1,
+	"type": "image",
+	"from": "MEM-2cf60b43-d677-4ada-91d7-ca63c61528d9",
+	"to": null,
+	"body": {
+		"representations": {
+			"original": {
+				"size": 30326,
+				"id": "43321767-5f57-4322-adc3-b43dcbe6203b",
+				"type": "original",
+				"url": "https://nexmo.com/play4/v3/media/43321767-5f57-4322-adc3-b43dcbe6203b"
+			},
+			"id": "75e0a805-1dae-4e17-893f-9fb4e9c33bcc",
+			"thumbnail": {
+				"size": 441,
+				"id": "b562c48a-0304-438c-b53b-2ab30c101948",
+				"type": "thumbnail",
+				"url": "https://nexmo.com/play4/v3/media/b562c48a-0304-438c-b53b-2ab30c101948"
+			},
+			"medium": {
+				"size": 7980,
+				"id": "c5840e3d-272d-4acb-bcbc-1d3b7fba5a1b",
+				"type": "medium",
+				"url": "https://nexmo.com/play4/v3/media/c5840e3d-272d-4acb-bcbc-1d3b7fba5a1b"
+			}
+		}
+	},
+	"state": null,
+	"timestamp": "2017-09-13T13:27:24.640Z",
+	"href": "http://nexmo.com/v1/conversations/CON-eb66c1d6-185a-4658-b05e-6a7cf50cc454/events/8"
+}

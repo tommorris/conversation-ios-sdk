@@ -1,0 +1,104 @@
+{
+    "count": 828,
+    "page_size": 10,
+    "record_index": 0,
+    "_links": {
+        "self": {
+            "href": "http://app1-test.fra2.internal:5200/v1/conversations"
+        }
+    },
+    "_embedded": {
+        "conversations": [
+            {
+                "uuid": "CON-77d8a67e-306e-4a15-9082-c7ee1fa93da1",
+                "name": "NAM-31a8192c-a6b6-4be5-8eab-aac676e1fc4d",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-77d8a67e-306e-4a15-9082-c7ee1fa93da1"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-c8ce1dc0-8fbd-47d8-83b6-6bba8580045f",
+                "name": "NAM-479f9f1f-2943-43f6-a9ff-49e066b16068",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-c8ce1dc0-8fbd-47d8-83b6-6bba8580045f"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-ff7a3e57-48e1-4b9d-a987-11180a3ecb58",
+                "name": "NAM-dfe5f969-efb1-41af-a715-ac2024030426",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-ff7a3e57-48e1-4b9d-a987-11180a3ecb58"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-bb25dece-3530-4a7e-8630-73a3610cdfc7",
+                "name": "NAM-5d7657e4-f943-428f-a21d-6134a080eea4",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-bb25dece-3530-4a7e-8630-73a3610cdfc7"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-b81d911a-03f5-4f43-93f5-406aa3eb43d2",
+                "name": "NAM-c578dcfa-5d67-448e-8c1f-e812880183c5",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-b81d911a-03f5-4f43-93f5-406aa3eb43d2"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-acf238c9-5645-454e-a1d7-6c04cfba2e6b",
+                "name": "NAM-134c7fcd-22ec-4bcf-8710-6f7b5d577d01",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-acf238c9-5645-454e-a1d7-6c04cfba2e6b"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-8328e9ac-b001-48a7-a8ab-2ffbc25a02dd",
+                "name": "NAM-df74075a-53b2-4704-bc5d-7f3249487ae2",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-8328e9ac-b001-48a7-a8ab-2ffbc25a02dd"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-1e49765a-20cb-4ef8-a44a-c4a53367b934",
+                "name": "conv_test1501591170562",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-1e49765a-20cb-4ef8-a44a-c4a53367b934"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-8e5686a4-ef90-4a81-999e-b9200b5cabe9",
+                "name": "conv_test1501590989185",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-8e5686a4-ef90-4a81-999e-b9200b5cabe9"
+                    }
+                }
+            },
+            {
+                "uuid": "CON-a51442af-8046-421d-932a-02fbb5861ec9",
+                "name": "NAM-a5f35c98-9b8c-4522-bee0-b523c4b79ec3",
+                "_links": {
+                    "self": {
+                        "href": "http://app1-test.fra2.internal:5200/v1/conversations/CON-a51442af-8046-421d-932a-02fbb5861ec9"
+                    }
+                }
+            }
+        ]
+    }
+}

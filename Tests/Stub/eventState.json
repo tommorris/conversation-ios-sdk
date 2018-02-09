@@ -1,0 +1,19 @@
+{
+    "body": {
+        "text": "text"
+    },
+    "from": "MEM-123",
+    "href": "http://localhost:8888/conversations/CON-sdk-test/events/2",
+    "id": "1",
+    "state": {
+        "delivered_to": {
+            "MEM-2": "2017-11-08T18:16:08.918Z"
+        },
+        "seen_by": {
+            "MEM-2": "2017-12-08T17:16:08.918Z"
+        }
+    },
+    "timestamp": "2017-11-08T17:16:08.918Z",
+    "to": null,
+    "type": "text"
+}

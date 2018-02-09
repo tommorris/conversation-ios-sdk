@@ -1,0 +1,10 @@
+﻿[
+    {
+        "cid": "CON-42f1d638-f324-4d30-97ef-a2ba8b8c0bde",
+        "body": {
+            "answer": "v=0\no=FreeSWITCH 1509429261 1509429262 IN IP4 169.50.1.152\ns=FreeSWITCH\nc=IN IP4 169.50.1.152\nt=0 0\na=msid-semantic: WMS 7Dv0dTms3ZpSToNMtCGH7Hc2zC2nZXzX\na=end-of-candidates\nm=audio 19876 UDP/TLS/RTP/SAVPF 111 110\na=rtpmap:111 opus/48000/2\na=fmtp:111 useinbandfec=1; minptime=10\na=rtpmap:110 telephone-event/48000\na=silenceSupp:off - - - -\na=ptime:20\na=sendrecv\na=fingerprint:sha-256 F3:BD:82:59:59:93:C0:17:3E:E5:89:4B:7B:BF:3B:98:4B:B2:A9:F5:91:53:14:14:CE:D9:9F:AD:DB:25:8E:9C\na=setup:active\na=rtcp-mux\na=rtcp:19876 IN IP4 169.50.1.152\na=ice-ufrag:mH9jfbcFE4TuRii8\na=ice-pwd:4WtyN6WsZ2S7NUyZsx9yzb34\na=candidate:0888177863 1 udp 659136 169.50.1.152 19876 typ host generation 0\na=ssrc:2517146096 cname:qVOuE0NxP2gzhUbB\na=ssrc:2517146096 msid:7Dv0dTms3ZpSToNMtCGH7Hc2zC2nZXzX a0\na=ssrc:2517146096 mslabel:7Dv0dTms3ZpSToNMtCGH7Hc2zC2nZXzX\na=ssrc:2517146096 label:7Dv0dTms3ZpSToNMtCGH7Hc2zC2nZXzXa0\n",
+            "rtc_id": "514dfb43-3c13-4bf2-84be-64721e146907"
+        },
+        "timestamp": "2017-10-31T11:25:38.061Z"
+    }
+]

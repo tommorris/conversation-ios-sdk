@@ -1,0 +1,168 @@
+SDK_VER="10.2"
+DEVICE_VER="7"
+TESTRUN_FILE="Build/Intermediates/CodeCoverage/Products/NexmoConversationE2ETests_iphonesimulator11.1-x86_64.xctestrun"
+BUILD_DIR="Build/Intermediates/CodeCoverage/Products/"
+XCODE="/Applications/Xcode/9.1/Xcode.app/Contents/Developer"
+REPO="git@github.com:Nexmo/conversation-ios-sdk.git"
+
+properties(
+    [
+        parameters(
+            [
+                booleanParam(defaultValue: false, description: '', name: 'cleanBuild'),
+                string(defaultValue: "", description: '', name: 'ips_url'),
+                string(defaultValue: "", description: '', name: 'socket_url'),
+                string(defaultValue: "", description: '', name: 'rest_url'),
+                string(defaultValue: "", description: '', name: 'token_url'),
+                string(defaultValue: "", description: '', name: 'app_id'),
+                credentials(defaultValue: "", description: '', name: 'githubCred', credentialType: "Username with password", required: true)
+            ]
+        ),
+        pipelineTriggers([])
+    ]
+)
+
+pipeline{
+    agent none
+    options { disableConcurrentBuilds() }
+    
+    parameters {
+        booleanParam(defaultValue: false, description: '', name: 'cleanBuild')
+        string(defaultValue: "", description: '', name: 'ips_url')
+        string(defaultValue: "", description: '', name: 'socket_url')
+        string(defaultValue: "", description: '', name: 'rest_url')
+        string(defaultValue: "", description: '', name: 'token_url')
+        string(defaultValue: "", description: '', name: 'app_id')
+        credentials(defaultValue: "", description: '', name: 'githubCred', credentialType: "Username with password", required: true)
+
+    }
+    
+    stages {
+        stage('Clean') {
+            agent { label 'osx' }
+
+            when {
+                expression { params.cleanBuild == true }
+            }
+            
+            steps {
+                cleanWs()
+            }
+        }
+        
+        stage('Preparation') { // for display purposes
+            agent { label 'osx' }
+            
+            environment {
+                  // Needed for rbenv, should tidy up 
+                  PATH = "/usr/local/bin:$PATH"
+            }
+        
+            steps {
+                // Setup Ruby tools
+                        sh 'rbenv local 2.3.0'
+                        sh 'gem install slather'
+                        sh 'gem install xcpretty'
+                
+                // Setup Python tools
+                sh 'virtualenv localpy'
+                sh 'source localpy/bin/activate'
+                sh 'localpy/bin/pip install xunitmerge'
+
+                // cleanup previous simulators 
+                sh 'killall "com.apple.CoreSimulator.CoreSimulatorService"'
+
+            }
+        }
+        
+        stage('Build') {
+            agent { label 'osx' }
+            
+            environment {
+                  // Needed for swiftlint, should tidy up 
+                  PATH = "/usr/local/bin:$PATH"
+                  DEVELOPER_DIR = "${XCODE}"
+                }
+            
+            steps {
+                sh "/usr/bin/xcodebuild build-for-testing -scheme NexmoConversationE2ETests -workspace NexmoConversation.xcworkspace -configuration Debug build \"DEVELOPMENT_TEAM=nexmo inc.\" -enableCodeCoverage YES -destination \"platform=iOS Simulator,name=iPhone ${DEVICE_VER},OS=${SDK_VER}\""
+            }
+        }
+        
+        stage("Testing") {
+            agent { label 'osx' }
+            
+            environment {
+                LANG="en_US.UTF-8"
+                LANGUAGE="en_US.UTF-8"
+                LC_ALL="en_US.UTF-8"
+                DEVELOPER_DIR = "${XCODE}"
+            }
+                    
+            steps {
+
+                // Setup Envs in xctestrun file 
+                script {
+                    envs = [
+                        "add NexmoConversationE2ETests:TestingEnvironmentVariables:token_url string ${params.token_url}",
+                        "add NexmoConversationE2ETests:TestingEnvironmentVariables:app_id string ${params.app_id}",
+                        "add NexmoConversationE2ETests:TestingEnvironmentVariables:ips_url string ${params.ips_url}",
+                        "add NexmoConversationE2ETests:TestingEnvironmentVariables:socket_url string ${params.socket_url}",
+                        "add NexmoConversationE2ETests:TestingEnvironmentVariables:rest_url string ${params.rest_url}"
+                    ]
+
+                    envs.eachWithIndex { item, index -> 
+                        sh "/usr/libexec/PlistBuddy -c \"${item}\" \"${TESTRUN_FILE}\" "
+                    }
+                }
+
+                // Run tests suites individually 
+                script {
+                    modules = [
+                        "JoinTest",
+                        "TextTest",
+                        "CreateConversationTest",
+                        "InviteTest",
+                        "ImageTest",
+                        "TypingTest",
+                        "GetConversationEventsTest",
+                        "DeleteEventTest",
+                        "KickTest",
+                        "GetConversationTest",
+                        "GetUserConversationsTest",
+                        "UserTest"
+                    ]
+
+                    modules.eachWithIndex { item, index -> 
+                        retry(3){
+                            sh "/usr/bin/xcodebuild test-without-building -xctestrun \"${TESTRUN_FILE}\" -enableCodeCoverage YES" +\
+                            " -configuration Debug \"DEVELOPMENT_TEAM=nexmo inc.\" -destination \"platform=iOS Simulator,name=iPhone ${DEVICE_VER},OS=${SDK_VER}\" " +\
+                            " -verbose -only-testing:NexmoConversationE2ETests/${item} 2>&1 | tee xcodebuild${index}.log | /usr/local/bin/xcpretty -r junit -o JUnit${index}.xml"
+
+                            // We error and retry if the simulator failed to start ...
+                            sh "! cat xcodebuild${index}.log | grep -q 'Early unexpected exit' "
+
+                            // We also retry if tests crashed
+                            sh "! cat xcodebuild${index}.log | grep -q 'Fatal error:' "
+
+                            // Gather converage
+                            sh "/usr/local/bin/slather coverage --build-directory ${BUILD_DIR} --output-directory slather/${index}/ --jenkins --cobertura-xml --ignore NexmoConversationTests/ --scheme NexmoConversation --workspace NexmoConversation.xcworkspace NexmoConversation.xcodeproj " 
+                        }
+                    }
+                }
+            }
+
+            post {
+                always {
+                    sh 'killall "com.apple.CoreSimulator.CoreSimulatorService"'
+
+                    // Merge and upload test reports 
+                    sh 'localpy/bin/xunitmerge JUnit*.xml final.xml'
+                    junit 'final.xml'
+
+                    cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: 'slather/*/cobertura.xml', conditionalCoverageTargets: '70, 0, 0', failUnhealthy: false, failUnstable: false, lineCoverageTargets: '80, 0, 0', maxNumberOfBuilds: 0, methodCoverageTargets: '80, 0, 0', onlyStable: false, zoomCoverageChart: false
+                }
+            }
+        }
+    }
+}

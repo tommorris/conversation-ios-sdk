@@ -1,0 +1,16 @@
+{
+    "body": {
+        "timestamp": {
+            "joined": "2017-08-15T11:52:26.532Z",
+            "left": "2017-08-18T09:44:56.843Z"
+        },
+        "user": {
+            "id": "USR-b58e90e3-953b-4600-a2cb-8f6cd14c2fdb",
+            "name": "demo1@nexmo.com"
+        }
+    },
+    "cid": "CON-fcb298cc-4f82-4a67-8d44-3d311caf83e5",
+    "from": "MEM-ab20e6e7-3d4e-43f0-86d5-738c9862b60d",
+    "id": 2,
+    "timestamp": "2017-08-18T09:44:56.845Z"
+}

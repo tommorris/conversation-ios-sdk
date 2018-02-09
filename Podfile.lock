@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (4.6.0)
+  - GRDB.swift (0.90.3)
+  - Mockingjay (2.0.1):
+    - Mockingjay/Core (= 2.0.1)
+    - Mockingjay/XCTest (= 2.0.1)
+  - Mockingjay/Core (2.0.1):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.1):
+    - Mockingjay/Core
+  - NexmoWebRTC (63.11.16)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - RxBlocking (4.1.1):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.1.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
+  - RxTest (4.1.1):
+    - RxSwift (~> 4.0)
+  - Socket.IO-Client-Swift (13.1.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.4)
+  - URITemplate (2.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - GRDB.swift (from `git@github.com:Nexmo/GRDB.swift.git`, branch `xcode_fix`)
+  - Mockingjay (from `git@github.com:kylef/Mockingjay.git`, branch `master`)
+  - NexmoWebRTC
+  - Nimble
+  - Quick
+  - RxBlocking
+  - RxCocoa
+  - RxTest
+  - Socket.IO-Client-Swift
+
+EXTERNAL SOURCES:
+  GRDB.swift:
+    :branch: xcode_fix
+    :git: git@github.com:Nexmo/GRDB.swift.git
+  Mockingjay:
+    :branch: master
+    :git: git@github.com:kylef/Mockingjay.git
+
+CHECKOUT OPTIONS:
+  GRDB.swift:
+    :commit: 916a3b045097732df040a409ce95a67692d76f0c
+    :git: git@github.com:Nexmo/GRDB.swift.git
+  Mockingjay:
+    :commit: 9a795ad511b6d4283e720ce0658808f3a8f3412f
+    :git: git@github.com:kylef/Mockingjay.git
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  GRDB.swift: 9538c00d6c528c97af09a2eb98ff5a3d356d13bb
+  Mockingjay: f838c0ab999cee73aaf93c373f5b10ec18f878cd
+  NexmoWebRTC: efb9a506e6107d12399114b621f4b71b07c56d75
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxBlocking: 22e7d7b86a1c0c42164a30d64f56f97128b4ffab
+  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  RxTest: f934010a5b07ecd627cb70b38eb4baf0414591d2
+  Socket.IO-Client-Swift: f22222913f29801e30ae0df712db663ec096edc2
+  Starscream: f5da93fe6984c77b694366bf7299b7dc63a76f26
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+
+PODFILE CHECKSUM: 9afa24320a0ffff4d4fa145f7d394c23b547d8fb
+
+COCOAPODS: 1.4.0.rc.1

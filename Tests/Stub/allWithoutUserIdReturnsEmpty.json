@@ -1,0 +1,13 @@
+{
+	"count": 0,
+	"page_size": "100",
+	"record_index": "0",
+	"_links": {
+		"self": {
+			"href": "http://app1-test.fra2.internal:5200/v1/conversations"
+		}
+	},
+	"_embedded": {
+		"conversations": []
+	}
+}
