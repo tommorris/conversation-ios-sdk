@@ -15,7 +15,7 @@
 The Conversation SDK is intended to provide a ready solution for developers who want to integrate chat, voice and video into their apps.
 
 # Getting started👇 
-Come checkout the iOS [quickstarts](https://www.github.com/nexmo/conversation-ios-quickstarts)!
+Come checkout the iOS [quickstarts](https://www.github.com/nexmo/conversation-ios-quickstart)!
 
 # Installation
 ### [CocoaPods](http://cocoapods.org)
@@ -32,7 +32,7 @@ source 'https://github.com/Nexmo/conversation-ios-sdk.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target '<YOUR_TARGET_NAME>' do
-    pod 'GRDB.swift', '~> 0.90.2'
+    pod 'GRDB.swift', '~> 0.90.3'
     pod 'NexmoConversation' # Stable version
     pod 'NexmoConversation', :git => 'https://github.com/Nexmo/conversation-ios-sdk.git', :branch => 'master' # Development version
 end

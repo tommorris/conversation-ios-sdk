@@ -1,3 +1,71 @@
+0.19.2 / 8-2-2018
+==================
+
+Fix issue where muting did not work on second attempt and issues where full sync had to happen on second launch due to database permissions.
+
+
+0.19.1 / 2-2-2018
+==================
+
+Fix cocoapods build
+
+
+0.19.0 / 1-2-2018
+==================
+
+# Breaking changes
+`AudioEvent` has now be renamed to `MediaEvent` to reflect other media type that will soon be available 
+```swift
+let event = event as? MediaEvent
+```
+
+
+`invitations` in `RTCController` has been renamed to `media` getter
+
+Old:
+```swift
+client.rtc.invitations
+```
+
+New:
+```swift
+client.media.invitations
+```
+
+
+`MessageSent` in `Conversation` class has now moved to `EventCollection` inside the `Conversation` class
+Old:
+```swift
+conversation.messageSent.addHandler { event in
+    // sent event here...            
+}
+```
+
+New:
+```swift
+conversation.events.eventSent.addHandler { event in
+    // sent event here...            
+}
+```
+
+# Changes
+Documentation has been updated to reflect most recent API change. This should now be much more simple to understand
+
+Removed GLOSS dependency for Swift 4 JSON
+
+
+0.18.1 / 26-12-2017
+==================
+# Bugs
+* Fixed RTC build issue
+
+
+0.18.0 / 26-12-2017
+==================
+# Feature
+* Support Swift 4 and Xcode 9+
+
+
 0.18.2 / 1-1-2018
 ==================
 # Bugs

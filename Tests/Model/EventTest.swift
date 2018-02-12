@@ -123,10 +123,12 @@ internal class EventTest: QuickSpec {
             expect(model.event) == "2"
         }
         
-        it("create a event state model fails") {
-            let state = try? JSONDecoder().decode(EventState.self, from: [:])
+        it("create a event state model that returns nil or empty") {
+            let model = try? JSONDecoder().decode(EventState.self, from: [:])
             
-            expect(state).to(beNil())
+            expect(model?.playDone).to(beNil())
+            expect(model?.deliveredTo.isEmpty).to(beTrue())
+            expect(model?.seenBy.isEmpty).to(beTrue())
         }
         
         it("fails to find error message") {

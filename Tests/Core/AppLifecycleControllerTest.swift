@@ -40,7 +40,7 @@ internal class AppLifecycleControllerTest: QuickSpec {
 
         // DISABLED
         it("receives remote notifications passes") {
-            var newNotification: RemoteNotification?
+            var newNotification: PushNotificationController.RemoteNotification?
             
             // TODO: add fake uiapplication mock
             _ = self.appLifeCycleController.receiveRemoteNotification.subscribe(onNext: { notification in

@@ -1301,7 +1301,6 @@
 		102463D11DBE752700053869 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				108B36611F71C27B00A06C6B /* PushNotificationState.swift */,
 				101219491F1680A600618383 /* Change.swift */,
 				108B365E1F71BD9900A06C6B /* UNUserNotificationCenter */,
 				102463D41DBE777800053869 /* UIApplication */,
@@ -2905,9 +2904,10 @@
 		B601EFBD1FBDBEEC00374A2D /* notifications */ = {
 			isa = PBXGroup;
 			children = (
-				B601EFC41FBF3E4000374A2D /* Test */,
+				108B36611F71C27B00A06C6B /* PushNotificationState.swift */,
 				B601EFC01FBDC84E00374A2D /* PushNotificationController.swift */,
 				B601EFC21FBF034900374A2D /* PushNotificationController+ObjectiveC.swift */,
+				B601EFC41FBF3E4000374A2D /* Test */,
 			);
 			name = notifications;
 			sourceTree = "<group>";

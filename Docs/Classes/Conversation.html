@@ -14,7 +14,7 @@
     <a title="Conversation Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">NexmoConversation Docs</a> (66% documented)</p>
+        <p><a href="../index.html">NexmoConversation Docs</a> (70% documented)</p>
         <p class="header-right"><a href="https://github.com/Nexmo/conversation-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -83,6 +83,15 @@
               <li class="nav-group-task">
                 <a href="../Classes/User.html">User</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Audio.html">Audio</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Audio/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Audio/Errors.html">– Errors</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -100,6 +109,27 @@
               <li class="nav-group-task">
                 <a href="../Classes/ConversationController/JoinConversation.html">– JoinConversation</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppLifecycleController.html">AppLifecycleController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppLifecycleController/Notification.html">– Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MediaController.html">MediaController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushNotificationController.html">PushNotificationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushNotificationController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RTCController.html">RTCController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RTCController/Media.html">– Media</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -116,6 +146,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ImageEvent.html">ImageEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MediaEvent.html">MediaEvent</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Event.html#/c:@M@NexmoConversation@objc(cs)NXMMembershipEvent">MembershipEvent</a>
@@ -167,6 +200,12 @@
               <li class="nav-group-task">
                 <a href="../Classes/ConversationPreviewModel.html">ConversationPreviewModel</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPS.html">IPS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPS/ImageType.html">– ImageType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -213,36 +252,6 @@
             <a href="../Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/AppLifecycleController.html">AppLifecycleController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/AppLifecycleController/Notification.html">– Notification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/Audio.html">Audio</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/Audio/State.html">– State</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/Audio/Errors.html">– Errors</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/AudioEvent.html">AudioEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MediaController.html">MediaController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PushNotificationController.html">PushNotificationController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/RTCController.html">RTCController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/RTCController/Media.html">– Media</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/Signal.html">Signal</a>
               </li>
               <li class="nav-group-task">
@@ -258,9 +267,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Enums/Change.html">Change</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/PushNotificationState.html">PushNotificationState</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/Result.html">Result</a>
@@ -296,21 +302,7 @@
             <a href="../Other Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/IPS.html">IPS</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/IPS/ImageType.html">– ImageType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/Request.html">Request</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Other Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Other Typealiases.html#/s:17NexmoConversation18RemoteNotificationa">RemoteNotification</a>
               </li>
             </ul>
           </li>
@@ -322,7 +314,7 @@
             <h1>Conversation</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Conversation</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Conversation</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -331,6 +323,13 @@
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Enum"></a>
+                <a name="//apple_ref/swift/Section/Enum" class="dashAnchor"></a>
+                <a href="#/Enum">
+                  <h3 class="section-name">Enum</h3>
+                </a>
+              </div>
               <ul>
                 <li class="item">
                   <div>
@@ -357,7 +356,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Media</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Media</span></code></pre>
 
                         </div>
                       </div>
@@ -390,7 +389,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Errors</span><span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Errors</span><span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -428,7 +427,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uuid</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uuid</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -455,7 +454,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -476,7 +475,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>An array of all of the users in the conversation.</p>
-<pre class="highlight plaintext"><code>var users:[Users] = conversation.allUsers
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">users</span><span class="p">:[</span><span class="kt">Users</span><span class="p">]</span> <span class="o">=</span> <span class="n">conversation</span><span class="o">.</span><span class="n">allUsers</span>
 </code></pre>
 
                       </div>
@@ -484,7 +483,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">users</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/User.html">User</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">users</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/User.html">User</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -511,7 +510,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastSequence</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastSequence</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -532,7 +531,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A collection of all of the members in the conversation.</p>
-<pre class="highlight plaintext"><code>var members: NexmoConversation.LazyCollection&lt;Member&gt;  = conversation.allMembers
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">members</span><span class="p">:</span> <span class="kt">NexmoConversation</span><span class="o">.</span><span class="kt">LazyCollection</span><span class="o">&lt;</span><span class="kt">Member</span><span class="o">&gt;</span>  <span class="o">=</span> <span class="n">conversation</span><span class="o">.</span><span class="n">allMembers</span>
 </code></pre>
 
                       </div>
@@ -540,7 +539,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">members</span><span class="p">:</span> <span class="kt"><a href="../Classes/MemberCollection.html">MemberCollection</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">members</span><span class="p">:</span> <span class="kt"><a href="../Classes/MemberCollection.html">MemberCollection</a></span></code></pre>
 
                         </div>
                       </div>
@@ -567,7 +566,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">events</span><span class="p">:</span> <span class="kt"><a href="../Classes/EventCollection.html">EventCollection</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">events</span><span class="p">:</span> <span class="kt"><a href="../Classes/EventCollection.html">EventCollection</a></span></code></pre>
 
                         </div>
                       </div>
@@ -588,7 +587,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The state of the user in this conversation.  Can be any of the states in Member.State</p>
-<pre class="highlight plaintext"><code>var state: Member.State = conversation.state
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">Member</span><span class="o">.</span><span class="kt">State</span> <span class="o">=</span> <span class="n">conversation</span><span class="o">.</span><span class="n">state</span>
 </code></pre>
 
                       </div>
@@ -596,7 +595,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Structs/MemberModel.html">MemberModel</a></span><span class="o">.</span><span class="kt">State</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Structs/MemberModel.html">MemberModel</a></span><span class="o">.</span><span class="kt">State</span></code></pre>
 
                         </div>
                       </div>
@@ -623,7 +622,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
@@ -650,7 +649,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">audio</span><span class="p">:</span> <span class="kt"><a href="../Classes/Audio.html">Audio</a></span> <span class="o">=</span> <span class="p">{</span> <span class="k">return</span> <span class="kt"><a href="../Classes/Audio.html">Audio</a></span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span> <span class="p">}()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">audio</span><span class="p">:</span> <span class="kt"><a href="../Classes/Audio.html">Audio</a></span> <span class="o">=</span> <span class="p">{</span> <span class="k">return</span> <span class="kt"><a href="../Classes/Audio.html">Audio</a></span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span> <span class="p">}()</span></code></pre>
 
                         </div>
                       </div>
@@ -686,19 +685,19 @@
 <p>Can add handlers to respond to new members in this conversation</p>
 
 <p>Using selectors:</p>
-<pre class="highlight plaintext"><code>newMember.addHandler(self, selector: #selector(MyClass.handleNewMember))
+<pre class="highlight swift"><code><span class="n">newMember</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">MyClass.handleNewMember</span><span class="kd">)</span><span class="p">)</span>
 </code></pre>
 
 <p>Using swift handlers:</p>
-<pre class="highlight plaintext"><code>newMember.addHandler(self, handler: MyClass.handleNewMember)
+<pre class="highlight swift"><code><span class="n">newMember</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kt">MyClass</span><span class="o">.</span><span class="n">handleNewMember</span><span class="p">)</span>
 </code></pre>
 
 <p>Handler should have Conversation and Member as parameters:</p>
-<pre class="highlight plaintext"><code>func handleNewMember(conversation: Conversation, newMember: Member) {
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleNewMember</span><span class="p">(</span><span class="nv">conversation</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">,</span> <span class="nv">newMember</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span> <span class="p">{</span>
 
-// Do something here
+<span class="c1">// Do something here</span>
 
-}
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -706,7 +705,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">newMember</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">newMember</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -731,19 +730,19 @@
 <p>Can add handlers to respond to a member leaving this conversation</p>
 
 <p>Using selectors:</p>
-<pre class="highlight plaintext"><code>memberLeft.addHandler(self, selector: #selector(MyClass.handleMemberLeft))
+<pre class="highlight swift"><code><span class="n">memberLeft</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">MyClass.handleMemberLeft</span><span class="kd">)</span><span class="p">)</span>
 </code></pre>
 
 <p>Using swift handlers:</p>
-<pre class="highlight plaintext"><code>memberLeft.addHandler(self, handler: MyClass.handleMemberLeft)
+<pre class="highlight swift"><code><span class="n">memberLeft</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kt">MyClass</span><span class="o">.</span><span class="n">handleMemberLeft</span><span class="p">)</span>
 </code></pre>
 
 <p>Handler should have Conversation and Member as parameters:</p>
-<pre class="highlight plaintext"><code>func handleMemberLeft(conversation: Conversation, member: Member) {
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleMemberLeft</span><span class="p">(</span><span class="nv">conversation</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">,</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span> <span class="p">{</span>
 
-// Do something here
+<span class="c1">// Do something here</span>
 
-}
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -751,7 +750,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">memberLeft</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">memberLeft</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -776,19 +775,19 @@
 <p>Can add handlers to respond to a member joining this conversation</p>
 
 <p>Using selectors:</p>
-<pre class="highlight plaintext"><code>memberJoined.addHandler(self, selector: #selector(MyClass.handleMemberJoined))
+<pre class="highlight swift"><code><span class="n">memberJoined</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">MyClass.handleMemberJoined</span><span class="kd">)</span><span class="p">)</span>
 </code></pre>
 
 <p>Using swift handlers:</p>
-<pre class="highlight plaintext"><code>memberJoined.addHandler(self, handler: MyClass.handleMemberJoined)
+<pre class="highlight swift"><code><span class="n">memberJoined</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kt">MyClass</span><span class="o">.</span><span class="n">handleMemberJoined</span><span class="p">)</span>
 </code></pre>
 
 <p>Handler should have Conversation and Member as parameters:</p>
-<pre class="highlight plaintext"><code>func handleMemberJoined(conversation: Conversation, member: Member) {
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleMemberJoined</span><span class="p">(</span><span class="nv">conversation</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">,</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span> <span class="p">{</span>
 
-// Do something here
+<span class="c1">// Do something here</span>
 
-}
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -796,7 +795,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">memberJoined</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">memberJoined</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -821,19 +820,19 @@
 <p>Can add handlers to respond to a member being invited to this conversation</p>
 
 <p>Using selectors:</p>
-<pre class="highlight plaintext"><code>memberInvited.addHandler(self, selector: #selector(MyClass.handleMemberInvited))
+<pre class="highlight swift"><code><span class="n">memberInvited</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">MyClass.handleMemberInvited</span><span class="kd">)</span><span class="p">)</span>
 </code></pre>
 
 <p>Using swift handlers:</p>
-<pre class="highlight plaintext"><code>memberInvited.addHandler(self, handler: MyClass.handleMemberInvited)
+<pre class="highlight swift"><code><span class="n">memberInvited</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kt">MyClass</span><span class="o">.</span><span class="n">handleMemberInvited</span><span class="p">)</span>
 </code></pre>
 
 <p>Handler should have Conversation and Member as parameters:</p>
-<pre class="highlight plaintext"><code>func handleMemberInvited(conversation: Conversation, member: Member) {
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleMemberInvited</span><span class="p">(</span><span class="nv">conversation</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">,</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Member</span><span class="p">)</span> <span class="p">{</span>
 
-// Do something here
+<span class="c1">// Do something here</span>
 
-}
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -841,7 +840,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">memberInvited</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">memberInvited</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -866,19 +865,19 @@
 <p>Can add handlers to respond to a change in the members in this conversation</p>
 
 <p>Using selectors:</p>
-<pre class="highlight plaintext"><code>membersChanged.addHandler(self, selector: #selector(MyClass.handleMembersChanged))
+<pre class="highlight swift"><code><span class="n">membersChanged</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">MyClass.handleMembersChanged</span><span class="kd">)</span><span class="p">)</span>
 </code></pre>
 
 <p>Using swift handlers:</p>
-<pre class="highlight plaintext"><code>membersChanged.addHandler(self, handler: MyClass.handleMembersChanged)
+<pre class="highlight swift"><code><span class="n">membersChanged</span><span class="o">.</span><span class="nf">addHandler</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kt">MyClass</span><span class="o">.</span><span class="n">handleMembersChanged</span><span class="p">)</span>
 </code></pre>
 
 <p>Handler should have Conversation as a parameter:</p>
-<pre class="highlight plaintext"><code>func handleMembersChanged(conversation: Conversation) {
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleMembersChanged</span><span class="p">(</span><span class="nv">conversation</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">)</span> <span class="p">{</span>
 
-// Do something here
+<span class="c1">// Do something here</span>
 
-}
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -886,72 +885,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">membersChanged</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/NSObject"></a>
-                <a name="//apple_ref/swift/Section/NSObject" class="dashAnchor"></a>
-                <a href="#/NSObject">
-                  <h3 class="section-name">NSObject</h3>
-                </a>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@NexmoConversation@objc(cs)NXMConversation(py)hashValue"></a>
-                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@NexmoConversation@objc(cs)NXMConversation(py)hashValue">hashValue</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Hashable</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@NexmoConversation@objc(cs)NXMConversation(py)description"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@NexmoConversation@objc(cs)NXMConversation(py)description">description</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Description</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">membersChanged</span> <span class="o">=</span> <span class="kt"><a href="../Classes/Signal.html">Signal</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -994,7 +928,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1045,7 +979,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1096,7 +1030,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TextEvent.html">TextEvent</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TextEvent.html">TextEvent</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1142,7 +1076,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TextEvent.html">TextEvent</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TextEvent.html">TextEvent</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1205,7 +1139,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">membershipForUser</span><span class="p">(</span><span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/User.html">User</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">membershipForUser</span><span class="p">(</span><span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/User.html">User</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1255,7 +1189,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1286,7 +1220,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">leave</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">leave</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1317,7 +1251,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">invite</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span><span class="o">=</span><span class="kc">nil</span><span class="p">,</span> <span class="n">with</span> <span class="nv">media</span><span class="p">:</span> <span class="kt"><a href="../Classes/Conversation/Media.html">Media</a></span><span class="p">?</span><span class="o">=</span><span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">invite</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span><span class="o">=</span><span class="kc">nil</span><span class="p">,</span> <span class="n">with</span> <span class="nv">media</span><span class="p">:</span> <span class="kt"><a href="../Classes/Conversation/Media.html">Media</a></span><span class="p">?</span><span class="o">=</span><span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1402,7 +1336,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startTyping</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startTyping</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1433,7 +1367,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopTyping</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopTyping</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1468,14 +1402,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Mark as dirty</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markIncomplete</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markIncomplete</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1495,14 +1429,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Mark as dirty</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markRequiresSync</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markRequiresSync</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1540,7 +1474,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">membersObjc</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">membersObjc</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Member.html">Member</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1578,7 +1512,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">leave</span><span class="p">(</span><span class="nv">onSuccess</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">onFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">leave</span><span class="p">(</span><span class="nv">onSuccess</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">onFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1647,7 +1581,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="nv">onSuccess</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">onFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="nv">onSuccess</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">onFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1716,7 +1650,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">invite</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">withAudio</span> <span class="nv">audio</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">onSuccess</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">onFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">invite</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">withAudio</span> <span class="nv">audio</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">onSuccess</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">onFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1759,8 +1693,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://nexmo.com" target="_blank" rel="external">Nexmo</a>. All rights reserved. (Last updated: 2018-01-02)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://nexmo.com" target="_blank" rel="external">Nexmo</a>. All rights reserved. (Last updated: 2018-02-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

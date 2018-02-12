@@ -78,7 +78,7 @@ platform :ios do
     push_git_tags
 
     github_release = set_github_release(
-      repository_name: "nexmo/conversation-ios-sdk",
+      repository_name: "nexmoinc/conversation-ios-sdk",
       api_token: $GITHUB_TOKEN,
       tag_name: version,
       name: "Pre-Release",

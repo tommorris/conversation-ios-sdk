@@ -18,9 +18,10 @@ public class PushNotificationController: NSObject {
     // MARK: Properties
     
     /// Push notification state
-    internal var subject = Variable<PushNotificationState?>(nil)
+    internal var subject = Variable<PushNotificationController.State?>(nil)
+    
     /// Push notification state observable
-    public var state: Observable<PushNotificationState> {
+    public var state: Observable<PushNotificationController.State> {
         return subject.asObservable().unwrap().share()
     }
     

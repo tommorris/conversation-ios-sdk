@@ -181,6 +181,7 @@ it(@"fails to create a non-joined conversation with objective-c", ^{
     } onFailure:^(NSError * _Nonnull error) {
         XCTFail(@"");
     } onComplete:^() {
+    
     }];
     
     expect(result).withTimeout(5).toEventually(beFalse());

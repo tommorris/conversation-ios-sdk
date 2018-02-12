@@ -63,17 +63,17 @@ internal extension RxSwift.Reactive where Base: UIApplication {
     
     /// Received remote notification observable
     /// Support iOS 9
-    internal var receiveRemoteNotification: Observable<PushNotificationState> {
+    internal var receiveRemoteNotification: Observable<PushNotificationController.State> {
         let remoteNotificationWithFetch = delegate
             .methodInvoked(#selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)))
-            .map { value in PushNotificationState.receivedRemoteNotification(
+            .map { value in PushNotificationController.State.receivedRemoteNotification(
                 payload: value[1] as? [AnyHashable: Any],
                 fetchCompletion: value[2])
         }
         
         let remoteNotification = delegate
             .methodInvoked(#selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:)))
-            .map { PushNotificationState.receivedRemoteNotification(
+            .map { PushNotificationController.State.receivedRemoteNotification(
                 payload: $0[1] as? [AnyHashable: Any],
                 fetchCompletion: nil)
         }
@@ -83,21 +83,21 @@ internal extension RxSwift.Reactive where Base: UIApplication {
     
     /// Registered for remote notifications device token observable
     /// Support iOS 9
-    internal var registeredForRemoteNotifications: Observable<PushNotificationState> {
+    internal var registeredForRemoteNotifications: Observable<PushNotificationController.State> {
         return delegate
             .methodInvoked(#selector(UIApplicationDelegate.application(_:didRegisterForRemoteNotificationsWithDeviceToken:)))
             .map { $0.last as? Data }
             .unwrap()
-            .map { PushNotificationState.registeredWithDeviceToken($0) }
+            .map { PushNotificationController.State.registeredWithDeviceToken($0) }
     }
 
     /// Register for remote notifications failed observable
-    internal var registerForRemoteNotificationsFailed: Observable<PushNotificationState> {
+    internal var registerForRemoteNotificationsFailed: Observable<PushNotificationController.State> {
         return delegate
             .methodInvoked(#selector(UIApplicationDelegate.application(_:didFailToRegisterForRemoteNotificationsWithError:)))
             .map { $0.last as? Error }
             .unwrap()
-            .map { PushNotificationState.registerForRemoteNotificationsFailed($0) }
+            .map { PushNotificationController.State.registerForRemoteNotificationsFailed($0) }
     }
     
     // MARK:

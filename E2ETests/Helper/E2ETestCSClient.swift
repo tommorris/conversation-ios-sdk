@@ -128,6 +128,7 @@ struct E2ETestCSClient {
             return try E2ETestCSClient.token(for: nil)
         }
         catch {
+            print(error)
             fatalError("Unable to create Admin Token")
         }
     }()

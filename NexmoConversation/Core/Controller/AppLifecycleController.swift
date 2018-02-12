@@ -26,22 +26,22 @@ public class AppLifecycleController: NSObject {
     internal let notificationVariable = Variable<Notification?>(nil)
 
     /// Received remote notifications observable
-    public lazy var receiveRemoteNotification: Observable<RemoteNotification> = {
-        var notifications = [Observable<PushNotificationState>]()
+    public lazy var receiveRemoteNotification: Observable<PushNotificationController.RemoteNotification> = {
+        var notifications = [Observable<PushNotificationController.State>]()
 
         if #available(iOS 10, *), !Environment.inTesting {
             notifications.append(UNUserNotificationCenter.current().rx.receivedNotification)
         }
         
         return Observable.merge(notifications)
-            .map { state -> RemoteNotification in
+            .map { state -> PushNotificationController.RemoteNotification in
                 guard case .receivedRemoteNotification(let payload, let completion) = state,
                     // we should be receiving a non empty dictionary
                     let data = payload as? [String: Any], !data.isEmpty else {
-                        return RemoteNotification(payload: [:], fetchCompletion: nil)
+                        return PushNotificationController.RemoteNotification(payload: [:], fetchCompletion: nil)
                 }
 
-                return RemoteNotification(payload: data, fetchCompletion: completion)
+                return PushNotificationController.RemoteNotification(payload: data, fetchCompletion: completion)
             }
             .share()
     }()

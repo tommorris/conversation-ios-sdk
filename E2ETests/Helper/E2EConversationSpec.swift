@@ -21,6 +21,7 @@ protocol StandardizeSpec: class {
 
 extension StandardizeSpec {
     func standardSetup() {
+    
     }
 }
 

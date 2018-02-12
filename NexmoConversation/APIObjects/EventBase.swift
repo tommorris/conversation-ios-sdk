@@ -8,10 +8,10 @@
 
 import Foundation
 
-// TODO: remove such approach for swifty protocol oriented extensions
 /// Event Base
 @objc(NXMEventBase)
 public class EventBase: NSObject {
+    // TODO: remove such approach for swifty protocol oriented extensions
     
     // MARK:
     // MARK: Enum

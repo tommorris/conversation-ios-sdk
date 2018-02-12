@@ -26,6 +26,7 @@ internal class PushNotificationControllerTest: QuickSpec {
     // MARK: Setup
     
     private func setup() {
+        
     }
     
     // MARK:
@@ -37,7 +38,7 @@ internal class PushNotificationControllerTest: QuickSpec {
         }
         
         it("fails to register for remote notifications") {
-            var newState: PushNotificationState?
+            var newState: PushNotificationController.State?
             
             _ = UIApplication.shared.rx.registerForRemoteNotificationsFailed.subscribe(onNext: { state in
                 newState = state
@@ -98,8 +99,8 @@ internal class PushNotificationControllerTest: QuickSpec {
         }
         
         // DISABLED
-        it("registers for remote notifications") {
-            var newState: PushNotificationState?
+        xit("registers for remote notifications") {
+            var newState: PushNotificationController.State?
             
             // TODO: add fake uiapplication mock
             _ = self.pushNotificationController.state.subscribe(onNext: { state in
@@ -110,7 +111,7 @@ internal class PushNotificationControllerTest: QuickSpec {
         }
         
         it("sends device token") {
-            var state: PushNotificationState?
+            var state: PushNotificationController.State?
             
             _ = self.pushNotificationController.state.subscribe(onNext: { newState in
                 state = newState

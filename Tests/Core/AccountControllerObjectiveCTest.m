@@ -41,7 +41,7 @@ it(@"fetch the user", ^{
     expect(result).withTimeout(5).toEventually(beTrue());
 });
 
-it(@"fails to fetch fetch the user", ^{
+it(@"fails to fetch a user", ^{
     NXMConversationClient *client = [NXMConversationClient instance];
     
     [HTTPStubbingFactor userErrorWith:self forId:@"usr-123"];

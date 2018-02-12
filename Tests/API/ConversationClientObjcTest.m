@@ -46,7 +46,7 @@
         }
     }];
     
-    expect(loginSuccess).toEventually(beFalse());
+    expect(loginSuccess).withTimeout(5).toEventually(beFalse());
 }
 
 - (void)testClientStateIsDisconnected {

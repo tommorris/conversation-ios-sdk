@@ -231,9 +231,13 @@ public class Audio: NSObject {
 
     private func mute(_ mute: Bool) {
         connection.peerConnection.localStreams.forEach { media in
-            media.audioTracks.forEach { $0.isEnabled = mute }
+            media.audioTracks.forEach {
+                if $0.isEnabled != !mute {
+                    $0.isEnabled = !mute
+                }
+            }
         }
-
+        
         sendEvent(mute ? .audioMute : .audioUnmute, to: conversation?.ourMemberRecord)
 
         Log.info(.rtc, "Audio state: \(mute ? "Muted" : "Unmuted")")

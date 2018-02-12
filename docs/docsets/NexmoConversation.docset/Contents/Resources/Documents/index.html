@@ -13,7 +13,7 @@
     <a title="NexmoConversation  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">NexmoConversation Docs</a> (66% documented)</p>
+        <p><a href="index.html">NexmoConversation Docs</a> (70% documented)</p>
         <p class="header-right"><a href="https://github.com/Nexmo/conversation-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -82,6 +82,15 @@
               <li class="nav-group-task">
                 <a href="Classes/User.html">User</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/Audio.html">Audio</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Audio/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Audio/Errors.html">– Errors</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -99,6 +108,27 @@
               <li class="nav-group-task">
                 <a href="Classes/ConversationController/JoinConversation.html">– JoinConversation</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppLifecycleController.html">AppLifecycleController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppLifecycleController/Notification.html">– Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MediaController.html">MediaController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PushNotificationController.html">PushNotificationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PushNotificationController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RTCController.html">RTCController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RTCController/Media.html">– Media</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -115,6 +145,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ImageEvent.html">ImageEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MediaEvent.html">MediaEvent</a>
               </li>
               <li class="nav-group-task">
                 <a href="Event.html#/c:@M@NexmoConversation@objc(cs)NXMMembershipEvent">MembershipEvent</a>
@@ -166,6 +199,12 @@
               <li class="nav-group-task">
                 <a href="Classes/ConversationPreviewModel.html">ConversationPreviewModel</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Structs/IPS.html">IPS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IPS/ImageType.html">– ImageType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -212,36 +251,6 @@
             <a href="Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/AppLifecycleController.html">AppLifecycleController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/AppLifecycleController/Notification.html">– Notification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Audio.html">Audio</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Audio/State.html">– State</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Audio/Errors.html">– Errors</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/AudioEvent.html">AudioEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/MediaController.html">MediaController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PushNotificationController.html">PushNotificationController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/RTCController.html">RTCController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/RTCController/Media.html">– Media</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/Signal.html">Signal</a>
               </li>
               <li class="nav-group-task">
@@ -257,9 +266,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Enums/Change.html">Change</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/PushNotificationState.html">PushNotificationState</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/Result.html">Result</a>
@@ -295,21 +301,7 @@
             <a href="Other Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/IPS.html">IPS</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/IPS/ImageType.html">– ImageType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/Request.html">Request</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Other Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Other Typealiases.html#/s:17NexmoConversation18RemoteNotificationa">RemoteNotification</a>
               </li>
             </ul>
           </li>
@@ -325,16 +317,17 @@
 <a href=""><img src="https://img.shields.io/cocoapods/v/NexmoConversation.svg" alt="CocoaPods"></a> (in private beta) 
 <a href=""><img src="https://img.shields.io/cocoapods/l/NexmoConversation.svg" alt="CocoaPods"></a> 
 <a href=""><img src="https://img.shields.io/cocoapods/p/NexmoConversation.svg" alt="CocoaPods"></a> 
-<a href=""><img src="https://img.shields.io/badge/Swift-3.1.X-orange.svg" alt="Swift"></a>
+<a href=""><img src="https://img.shields.io/badge/Swift-4.0.X-orange.svg" alt="Swift"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-soon-4BC51D.svg?style=flat" alt="Carthage compatible"></a> 
 <a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-soon-brightgreen.svg" alt="Swift Package Manager compatible"></a>
 <a href="https://codecov.io/gh/Nexmo/conversation-ios-sdk"><img src="https://codecov.io/gh/Nexmo/conversation-ios-sdk/branch/master/graph/badge.svg" alt="codecov"></a>
+<a href="https://apple.com"><img src="https://img.shields.io/badge/iOS-10-blue.svg" alt="iOS"></a>
 <a href="https://twitter.com/Nexmo"><img src="https://img.shields.io/badge/twitter-@Nexmo-blue.svg?style=flat" alt="Twitter"></a></p>
 
 <p>The Conversation SDK is intended to provide a ready solution for developers who want to integrate chat, voice and video into their apps.</p>
 <h1 id='getting-started' class='heading'>Getting started👇</h1>
 
-<p>Come checkout the iOS <a href="https://www.github.com/nexmo/conversation-ios-quickstarts">quickstarts</a>!</p>
+<p>Come checkout the iOS <a href="https://www.github.com/nexmo/conversation-ios-quickstart">quickstarts</a>!</p>
 <h1 id='installation' class='heading'>Installation</h1>
 <h3 id='a-href-http-cocoapods-org-cocoapods-a' class='heading'><a href="http://cocoapods.org">CocoaPods</a></h3>
 
@@ -347,7 +340,7 @@
 <span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
 
 <span class="n">target</span> <span class="s1">'&lt;YOUR_TARGET_NAME&gt;'</span> <span class="k">do</span>
-    <span class="n">pod</span> <span class="s1">'GRDB.swift'</span><span class="p">,</span> <span class="s1">'~&gt; 0.90.2'</span>
+    <span class="n">pod</span> <span class="s1">'GRDB.swift'</span><span class="p">,</span> <span class="s1">'~&gt; 0.90.3'</span>
     <span class="n">pod</span> <span class="s1">'NexmoConversation'</span> <span class="c1"># Stable version</span>
     <span class="n">pod</span> <span class="s1">'NexmoConversation'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/Nexmo/conversation-ios-sdk.git'</span><span class="p">,</span> <span class="ss">:branch</span> <span class="o">=&gt;</span> <span class="s1">'master'</span> <span class="c1"># Development version</span>
 <span class="k">end</span>
@@ -359,9 +352,9 @@
 <h3 id='a-href-https-github-com-carthage-carthage-carthage-a' class='heading'><a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
 
 <p>Add this to <code>Cartfile</code></p>
-<pre class="highlight plaintext"><code>github "Nexmo/NexmoConversation" ~&gt; CURRENT_VERSION
+<pre class="highlight plaintext"><code>github "Nexmo/conversation-ios-sdk" ~&gt; CURRENT_VERSION
 </code></pre>
-<pre class="highlight shell"><code><span class="gp">$ </span>carthage update
+<pre class="highlight shell"><code><span class="gp">$ </span>carthage update --platform iOS
 </code></pre>
 <h1 id='sdk-setup' class='heading'>SDK Setup</h1>
 
@@ -459,8 +452,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://nexmo.com" target="_blank" rel="external">Nexmo</a>. All rights reserved. (Last updated: 2018-01-02)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://nexmo.com" target="_blank" rel="external">Nexmo</a>. All rights reserved. (Last updated: 2018-02-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

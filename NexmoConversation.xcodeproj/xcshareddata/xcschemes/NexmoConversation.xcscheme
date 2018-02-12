@@ -62,7 +62,43 @@
                   Identifier = "AppLifecycleControllerTest/registers_for_remote_notifications()">
                </Test>
                <Test
+                  Identifier = "AudioTest">
+               </Test>
+               <Test
+                  Identifier = "ConversationClientNetworkTest">
+               </Test>
+               <Test
+                  Identifier = "ConversationControllerObjectiveCTest">
+               </Test>
+               <Test
+                  Identifier = "ConversationControllerTest">
+               </Test>
+               <Test
+                  Identifier = "ConversationObjectiveCTest">
+               </Test>
+               <Test
+                  Identifier = "DatabaseTest">
+               </Test>
+               <Test
+                  Identifier = "DispatchQueueTest">
+               </Test>
+               <Test
+                  Identifier = "EnvironmentTest">
+               </Test>
+               <Test
+                  Identifier = "MediaTest">
+               </Test>
+               <Test
                   Identifier = "MembershipControllerTest/fetches_a_member_model_for_a_conversation()">
+               </Test>
+               <Test
+                  Identifier = "ModifyDBEventOperationTest">
+               </Test>
+               <Test
+                  Identifier = "PushNotificationControllerTest">
+               </Test>
+               <Test
+                  Identifier = "RTCControllerTest">
                </Test>
                <Test
                   Identifier = "SubscriptionServiceTest/validates_event_listeners()">

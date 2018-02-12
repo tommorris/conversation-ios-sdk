@@ -164,6 +164,8 @@ public class ConversationClient: NSObject {
 
     @discardableResult
     private override init() {
+        ConversationClient.preSetup()
+        
         networkController = NetworkController()
         account = AccountController(network: networkController)
         media = RTCController(network: networkController)
@@ -210,6 +212,11 @@ public class ConversationClient: NSObject {
     // MARK:
     // MARK: Private - Setup
 
+    /// Make sure setup is the first thing called
+    private static func preSetup() {
+        _ = ConversationClient.configuration
+    }
+    
     private func setup() {
         setupApplicationBinding()
         setupClientBinding()
@@ -336,7 +343,7 @@ public class ConversationClient: NSObject {
         let hasDeviceToken: Observable<Data?> = appLifecycle.push.state
             .observeOnBackground()
             .map { [unowned self] state -> Data? in
-                guard case PushNotificationState.registeredWithDeviceToken(let token) = state else {
+                guard case PushNotificationController.State.registeredWithDeviceToken(let token) = state else {
                     self.appLifecycle.push.unregisterForPushNotifications()
                     return nil
                 }

@@ -35,8 +35,12 @@ internal class EventStateTest: QuickSpec {
             expect(model?.seenBy).toNot(beNil())
         }
         
-        it("fails to create a model") {
-            expect(try? JSONDecoder().decode(EventState.self, from: [:])).to(beNil())
+        it("creates a model that return nil/empty") {
+            let model = try? JSONDecoder().decode(EventState.self, from: [:])
+            
+            expect(model?.playDone).to(beNil())
+            expect(model?.deliveredTo.isEmpty).to(beTrue())
+            expect(model?.seenBy.isEmpty).to(beTrue())
         }
     }
 }
